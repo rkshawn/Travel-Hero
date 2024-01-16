@@ -195,6 +195,25 @@ main {
   font-size: 1rem;
   font-weight: 400;
 }
+/* simple place related styles */
+.simple-place{
+  display: flex;
+  margin-top: 100px;
+}
+.simple-place-img img{
+  width: 100%;
+  height: 100%;
+}
+.simple-place-title{
+  color: #131318;
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+.simle-place-text{
+  color: #5A5A5D;
+  font-size: 1rem;
+  font-weight: 400;
+}
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
@@ -206,7 +225,8 @@ main {
   .contact,
   .popular-tour,
   .image-row,
-  .box-row
+  .box-row,
+  .simple-place
   {
     flex-direction: column;
   }
@@ -218,7 +238,8 @@ main {
   .header-title,
   .haven,
   .destination-title,
-  .choose-title
+  .choose-title,
+  .simple-place-title
   {
     font-size: 22px;
   }
@@ -235,5 +256,8 @@ main {
   }
   .box{
     width: 80%;
+  }
+  .simple-place-img img{
+    margin-top: 30px;
   }
 }
